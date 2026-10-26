@@ -4,7 +4,7 @@ Static GitHub Pages site: example maps + a per-slot ad uploader.
 
 ## Using the editor
 1. Open the site, pick a map.
-2. Every ad slot (T1–T5 top, B1–B5 bottom, L1–L4 left, R1–R4 right; tick "Show QR corner slots" for QR-TL/TR/BL/BR) has an **Upload** box. Click it to choose an image, or drag an image onto it.
+2. Every ad slot (T1–T5 top, B1–B5 bottom, L1–L5 left, R1–R5 right; tick "Show QR corner slots" for QR-TL/TR/BL/BR) has an **Upload** box. Click it to choose an image, or drag an image onto it.
 3. Hover a filled slot and click ✕ to clear it. **Reset all** clears the map.
 4. Uploads are saved in your browser (IndexedDB) — refresh keeps them. Other browsers/devices won't see them.
 5. **Download PNG** = full map with ads composited. **Download ad files (zip)** = `ads/<map-id>/T1.png` etc.
