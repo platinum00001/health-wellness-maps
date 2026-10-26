@@ -1,0 +1,6 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Falmouth Health & Wellness Maps</title><link rel="stylesheet" href="style.css"></head>
+<body><header><h1>Falmouth Health & Wellness Maps</h1><p>Pick a map, then click any ad slot to upload (or drag a graphic onto it).</p></header>
+<main id="gallery" class="gallery"></main>
+<script>
+fetch('maps.json').then(r=>r.json()).then(ms=>{gallery.innerHTML=ms.map(m=>`<a class="card" href="editor.html?map=${m.id}"><img src="${m.image}"><h3>${m.title}</h3><span>Open editor →</span></a>`).join('')+`<div class="card soon"><h3>17×22 portrait</h3><span>Coming soon</span></div>`})
+</script></body></html>
